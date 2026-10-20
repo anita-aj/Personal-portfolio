@@ -1,130 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anita Jepngetich Portfolio</title>
-<!--Loading the Poppins google font with an early connection link with font weights of 400, 500, 600, and 700 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!--Loading the Tailwind CSS framework from a CDN -->
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3"></script>
-<!--Linking the external CSS file for custom styles -->
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anita Jepngetich Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="outer-frame">
-  <div class="inner-box">
+  <!--Header Section-->
+  <header class="header">
+    <h1 class="name">Anita Jepngetich</h1>
+    <a class="github-link" href="https://github.com/anita-aj" target="_blank" rel="noopener noreferrer">GitHub Profile &rarr;</a>
+   <nav aria-label="Main Navigation"
+   <ul class="nav-links">
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+  </header>
 
-    <!-- Hidden radio buttons to control which section shows -->
-    <input type="radio" name="tabs" id="tab-home" class="tab-radio" checked>
-    <input type="radio" name="tabs" id="tab-about" class="tab-radio">
-    <input type="radio" name="tabs" id="tab-skills" class="tab-radio">
-    <input type="radio" name="tabs" id="tab-hobbies" class="tab-radio">
-    <input type="radio" name="tabs" id="tab-contact" class="tab-radio">
-
-    <!-- Nav bar -->
-    <nav class="navbar">
-      <div class="logo">Anita</div>
-      <ul class="nav-links">
-        <li><label for="tab-home">Home</label></li>
-        <li><label for="tab-about">About</label></li>
-        <li><label for="tab-skills">Skills</label></li>
-        <li><label for="tab-hobbies">Hobbies</label></li>
-        <li><label for="tab-contact">Contact</label></li>
-      </ul>
-    </nav>
-
-    <!--HOME-->
-    <section id="home" class="section hero">
-      <div class="bg-word">Home</div>
-      <div class="section-inner">
-        <p class="greeting">Hey! I'm </p>
-        <h1 class="name">Anita Jepngetich</h1>
-     <!--Styled photocircle using Tailwind CSS -->
-        <div class="photo-circle">
-          <img src="Anita.jpeg" alt="Anita Jepngetich">
-        </div>
-      <!-- Styled button with Tailwind CSS -->
-        <label for="tab-contact" class="inline-block cursor-pointer rounded-full bg-[#ff4d94] px-8 py-3.5 font-semibold text-[#111] hover:bg-[#ff6ba7] ">Say Hello</label>
-      </div>
-    </section>
-
-    <!--ABOUT-->
+  <main>
+    <!--About Me Section-->
     <section id="about" class="section">
-      <div class="bg-word">About</div>
-      <div class="section-inner">
-        <h2 class="section-title">Who am I?</h2>
-        <p class="section-text">
-          An electrical and electronics engineer with basic proficiency in
-          software development.
-        </p>
-        <p class="section-text">
-          I am passionate about learning new technologies to enhance my skills.
-          My goal is to contribute to innovative projects that make a positive
-          impact on users' lives. Outside of code, I enjoy design
-          and finding small ways to make everyday things feel a little nicer
-          and easier using tech.
-        </p>
-      </div>
-    </section>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-layout">
+        <img class="profile-photo" src="Anita.jpeg" alt="Potrait of Anita Jepngetich" width="220" height="220">
 
-    <!--SKILLS-->
-    <section id="skills" class="section">
-      <div class="bg-word">Skills</div>
-      <div class="section-inner">
-        <h2 class="section-title">Skills</h2>
-        <div class="chip-row">
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Power Systems</span>
-          <span class="chip">Telecommunication</span>
-          <span class="chip">Electrical Design</span>
+        <div class="about-text">
+        <p>Hello! I'm Anita, an Electrical and Electronics engineer with proficiency in software development. I enjoy turning ideas into things that work. Where software and hardware meet is my area of expertise.</p>
+          <p>My passion lies in learning new technologies and bridging the gap between hardware and software. My goal is to contribute to projects that make a positive and lasting impact in people's lives. I enjoy design and finding small ways to make everyday things feel a little nicer and easier using tech.</p>
         </div>
-
-        <div class="skills-footer">
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/anita-kimutai-351115369" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <span>&middot;</span>
-            <a href="https://github.com/anita-aj" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      
+      
+      <div class="skills">
+      
+        <div class="skill-group">
+          <h3 class="sub-title">Software & Web Development</h3>
+          <div class="chip-row">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
           </div>
-          <p class="skills-footer-copy">&copy; 2026 Anita Jepngetich. All rights reserved.</p>
         </div>
+      
+        <div class="skill-group">
+          <h3 class="sub-title">Electrical &amp; Electronics</h3>
+          <div class="chip-row">
+            <span class="chip">Power Systems</span>
+            <span class="chip">Telecommunications</span>
+            <span class="chip"> AutoCAD Circuit design</span>
+          </div>
+        </div>
+       
       </div>
     </section>
 
-    <!--HOBBIES-->
-    <section id="hobbies" class="section">
-      <div class="bg-word">Hobbies</div>
-      <div class="section-inner">
-        <h2 class="section-title">Hobbies</h2>
-        <div class="chip-row">
-          <span class="chip">Playing the Piano</span>
-          <span class="chip">Hiking</span>
-          <span class="chip">Gardening</span>
-          <span class="chip">Listening to Music</span>
-        </div>
+  <!--Projects Section-->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-list">
+        <article class="project-card">
+          <img class="project-img" src="Product-system.png" width="600" height="360">
+          <div class="project-body">
+            <h3 class="project-title">Store Inventory Management System</h3>
+            <p class="project-text">A simple system to manage a store's product inventory</p>
+            <a class="project-link" href="https://github.com/anita-aj" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+       </div>
+        </article>
+        
+        <article class="project-card">
+          <img class="project-img" src="Improved UI.png" width="600" height="360">
+          <div class="project-body">
+            <h3 class="project-title">Client Portfolio UI Redesign</h3>
+            <p class="project-text"> Improved the user interface of a client's portfolio website for better usability and aesthetics.</p>
+            <a class="project-link" href="https://github.com/anita-aj" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img class="project-img" src="Electrical-fire.jpeg" width="600" height="360">
+          <div class="project-body">
+            <h3 class="project-title">Real-Time Electrical Fire Protection Scheme</h3>
+            <p class="project-text">Built a smart system that is capable of monitoring faults and reduces the risk of electrical fires</p>
+            
+          </div>
+        </article>
+      
       </div>
     </section>
 
-    <!--CONTACT-->
+    <!--Contact Section-->
     <section id="contact" class="section">
-      <div class="bg-word">Contact</div>
-      <div class="section-inner">
-        <h2 class="section-title">Let's Talk</h2>
-        <p class="section-text">Have something in mind? Reach out any time.</p>
-        <a href="mailto:anitakimutai99@gmail.com" class="inline-block cursor-pointer rounded-full bg-[#ff4d94] px-8 py-3.5 font-semibold text-[#111] hover:bg-[#ff6ba7]">anitakimutai99@gmail.com</a>
-      </div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-text">Have something in mind? Feel free to reach out!</p>
+      <a class="btn" href="mailto: anitajepngetich50@gmail.com">anitajepngetich50@gmail.com</a>
     </section>
 
-    <footer class="footer border-t border-[#222] p-6 text-center text-sm text-[#777]">
-      <p>&copy; 2026 Anita Jepngetich. All rights reserved.</p>
-    </footer>
+  </main>
 
-  </div>
-</div>
-
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/anita-aj" target="_blank" rel="noopener noreferrer">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/anita-jepngetich-351115369" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p class="footer-copyright">&copy; 2026 Anita Jepngetich. All rights reserved.</p>
+  </footer>
+ 
 </body>
 </html>
